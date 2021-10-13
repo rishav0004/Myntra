@@ -1,0 +1,23 @@
+.login{
+    place-items: center;
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.login__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.login__container > Button{
+    background-color: #1a73e8 ;
+    color: white;
+
+
+}

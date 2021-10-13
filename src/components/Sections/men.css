@@ -1,0 +1,12 @@
+.main__men{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+
+.card__main:hover{
+    background-color: none;
+    cursor: none;
+}

@@ -1,0 +1,79 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+.main__left{
+    flex: 0.5;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main__left > img{
+    cursor: pointer;
+}
+
+
+.hl_component{
+    list-style: none;
+    display: flex;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    color: grey;
+}
+
+.hl_component > h3{
+    font-size: 13px;
+    margin: 15px;
+    cursor: pointer;
+    color: grey;
+}
+
+
+.header__right{
+    flex: 0.4;
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.hr_components{
+    display: flex;
+    flex: 0.8;
+    color: grey;
+    justify-content: space-between;
+}
+
+.inputtag{
+    display: flex;  
+    background-color: whitesmoke;
+    padding: 10px;
+
+}
+
+.inputtag > input{
+    font-size: 13px;
+    width: 300px;
+    padding-left: 5px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+
+}
+
+.hr_components > span{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hr_components > span :hover{
+    color: black;
+}

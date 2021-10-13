@@ -1,0 +1,22 @@
+.bottom__Card {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    justify-content: space-around;
+}
+
+.bottom__Card> button{
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ff3f6c;
+    background-color: #fff;
+    border:1px solid #ff3f6c;
+}
+
+.bottom__Card> button :hover{
+    background-color: red;
+}
+
+.card__main :hover{
+    background-color: #fff;
+}

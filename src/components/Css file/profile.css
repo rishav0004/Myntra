@@ -1,0 +1,35 @@
+.bag{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.customer__detaik>h3{
+    font-weight: 400;
+}
+
+.customer__detaik>h4{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.butn{
+    padding-top: 100px;
+}
+
+
+.butn > button{
+    border: 1px solid #ff3f6c;
+    background-color: #fff;
+    color: #ff3f6c;
+    font-size: 20px;
+    font-weight: 200;
+    width: 200px;
+    height: 40px;
+}
+
+
+.user__name{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
