@@ -44,7 +44,7 @@ function App() {
   const fetchProducts = async() =>{
     const response = await commerce.products.list();
     setProductList(response.data)
-    // console.log(response)
+    console.log(response)
   }
 
  
@@ -85,7 +85,7 @@ function App() {
       category_slug:[category]
     })
     setProductByCategory(response.data)
-    console.log(response)
+    // console.log(response)
   }
 
   // const [userData, setUserData] = useState()
@@ -158,7 +158,7 @@ function App() {
             <Route exact path="/" >
               <Banner />
               <Card />
-              <Shoppingcard />
+              <Shoppingcard productList = {productList} addToCart = {addToCart}/>
             </Route>
 
           </Switch>

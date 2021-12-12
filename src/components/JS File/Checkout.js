@@ -65,14 +65,14 @@ function Checkout({cart, setorder}) {
             payment: {
                 gateway: 'test_gateway',
                 card: {
-                  number: '4242424242424242',
-                  expiry_month: '02',
-                  expiry_year: '24',
-                  cvc: '123',
-                  postal_zip_code: '94107',
+                    number: '4242424242424242',
+                    expiry_month: '02',
+                    expiry_year: '24',
+                    cvc: '123',
+                    postal_zip_code: '94107',
                 },
             },
-            pay_what_you_want: cart.subtotal.raw
+            // pay_what_you_want: cart?.subtotal?.raw
           })
           setorder(incomingOrder);
           history.push("/orderConfirmed");
@@ -80,10 +80,10 @@ function Checkout({cart, setorder}) {
         }
     }
 
-    const getShippingCountries = async(tokenID)=>{
-        const {countries} =  await commerce.services.localeListShippingCountries(tokenID);
-        setCountryList(Object.entries(countries));
-     }
+    async function getShippingCountries(tokenID) {
+        const { countries } = await commerce.services.localeListShippingCountries(tokenID)
+        setCountryList(Object.entries(countries))
+    }
 
      const getShippingSubdivision = async(country) =>{
          const {subdivisions} = await commerce.services.localeListSubdivisions(country)

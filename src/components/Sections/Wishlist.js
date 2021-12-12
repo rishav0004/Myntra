@@ -3,7 +3,7 @@ import React from 'react'
 function Wishlist() {
     return (
         <div>
-            wishlist
+            This feature is not yet available.
         </div>
     )
 }

@@ -28,14 +28,23 @@
     padding:10px 0px;
 }
 .checkout__column button {
-    background-color: #f0c14b;
-    border-radius: 5px;
+    border-radius: 100px;
+    border-color: #ff3f6c;
+    color: #ff3f6c;
+    border: 2px solid #ff3f6c;
+    color: #ff3f6c;
     width: 100%;
     border:0;
     outline: 0;
     cursor: pointer;
     padding: 10px 0px;
 }
+
+.checkout__column button  :hover{
+    background: #f44336;
+    color: white;
+}
+
 .order__confirm {
     width: 600px;
     margin:20px auto;
